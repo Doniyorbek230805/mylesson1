@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson One</title>
+    <style>
+        * {
+            color: white;
+        }
+        body {
+            background-color: black;
+        }
+        header h1 {
+            text-align: center;
+            color: orangered;
+            font-size: 48px;
+        }
+       #mavzu{
+        color: red;
+       }
+       button {
+        color: red;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML da dasturlash</h1>
+        <br>
+        <h1> 
+            <mark id="mavzu">
+                1 - dars.
+            </mark>
+        </h1>
+        <ol>
+            <li>Development Environment</li>
+            <li>Hujjat strukturasi va DOCTYPE</li>
+            <li>Element va attributlar</li>
+            <li>Headings va Paragraph elementlari</li>
+            <li>Formatting elementlari</li>
+            <li>Style elementi</li>
+        </ol>
+    </header>
+    <nav id="head">
+        <a href="#layout1"><button>Development Environment</button></a>
+        <a href="#layout2"><button>Hujjat Strukturasi</button></a>
+        <a href="#layout3"><button>Element va Attributlar</button></a>
+        <a href="#layout4"><button>Headings va Paragraph</button></a>
+        <a href="#layout5"><button>Formatting elementlari</button></a>
+        <a href="#layout6"><button>Style elementi</button></a>
+    </nav>
+    <section>
+        <div class="layout1" id="layout1">
+            <h1>
+                <p>Development Environment</p>
+            </h1>
+            <h2>
+                <p>Development Environment o'zi nima? <br> 
+                Development Environment bu Dasturlash muhiti. <br>
+                Dasturlash muhiti uchun kerak bo'ladigan 2 ta asosiy vosita: <br>
+                <ol>
+                    <li>Brauzer</li>
+                    <b>Brauzerlar:</b>
+                    <ul>
+                        
+                        <li>Google Chrome</li>
+                        <li>Microsoft Edge</li>
+                        <li>Fire Fox</li>
+                        <li>Opera</li>
+                    </ul>
+                    <li>Integrated Development Environment ,ya'ni dasturlash uchun mo'ljallagan ish oyna yoki muhit</li>
+                    <i>Dasturlash muhitlari</i>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Sublime</li>
+                    </ul>
+                </ol>
+                </p>
+            </h2>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+        <div class="layout2" id="layout2">
+            <h2>Hujjat Strukturasi</h2>
+            <h3>HTML strukturasi <i> html </i> tegidan boshlanadi. <i>html</i> maxsus teg bo'lib, bunda biz barcha kodlarni 
+            shuning ichiga yozish orqali veb sahifamizni yasay olamiz.</h3>
+            <h3><i>html</i> tegidan avval <b>!DOCTYPE</b> ko'rinishdagi yozuvni ko'rish mumkin.
+            Bu yozuv bizni hujjatimizning turini ko'rsatib turadi. DOCTYPE , ya'ni Document Type - "Hujjat Turi" . 
+            DOCTYPE teg hisoblanmaydi. Aksincha bu statement. Statement - "Bayonot". DOCTYPE ning bir xususiyati
+            bizning kodimizga va uning natijalariga ta'sir qilmasa-da, u serverga hujjat haqida ma'lumot beradi.
+        </h3>
+            <h3>
+                <p>
+                    HTML hujjatimiz 2 qismdan iborat:
+                    <ul>
+                        <li>
+                            1.Head <br>
+                            <p>Head (inglizcha - "bosh") - bu hujjatimizning bosh qismi hisoblanadi.
+                                Head qismiga <i>users</i>ga ko'rinmaydigan, ammo veb saytimizni ishlashini 
+                                ta'minlaydigan kodlarni yozamiz. Head qismda yana HTML hujjatimizga tashqi resurslarni ham 
+                                yuklashimiz mumkin bo'ladi. 
+                            </p>
+                        </li>
+                        <li>
+                            2.Body <br>
+                            <p>Body (inglizcha - "tana") - bu hujjatimizning tana qismi hisoblanib,
+                                <i>users</i>ga ko'rinadigan kodlarni yozishimiz mumkin.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </h3>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+        <div class="layout3" id="layout3">
+            <h1>      <p>Element va attributlar</p></h1>
+            <h3>
+                <p>Elementlar</p>
+                <p>Element nima? <br>
+                Element go'yoki bir struktura.
+                </p>
+                <img src="/my-portfolio/imgs/element.jpg" alt="element">
+            </h3>
+            <h3>
+                <p>Attributes</p>
+                <p>Attribut nima?</p>
+                <p><i>Attributlar teg haqida qo'shimcha ma'lumot berish, tegning imkoniyatlarini 
+                    kengaytirish uchun ishlatilib, faqat ochuvchi tegga yoziladi.
+                    Attributlarning afzalliklari judayam ko'p.
+                </i></p>
+            </h3>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+        <div class="layout4" id="layout4">
+            <h1>Headings va Paragraph elementlari</h1>
+            <ol>
+                <li>
+                    <h2>Headings</h2>
+                    <h4>Headings , ya'ni sarlavhalar. Bu elementlar asosan, veb sahifada sarlavhalar 
+                        yaratish uchun mo'ljallangan. <br> Sarlavhaning o'ziga xos o'lchamga ega 6 ta turi bor: <br>
+                      <ol>
+                        <li>h1</li>
+                        <li>h2</li>
+                        <li>h3</li>
+                        <li>h4</li>
+                        <li>h5</li>
+                        <li>h6</li>
+                      </ol> <br>
+                      Eng katta o'lchamga ega sarlavha <b>h1</b>, eng kichik o'lchamga ega sarlavha esa <b>h6</b>
+
+                    </h4>
+                    <h4>Asosiy sarlavha esa <b><i>h1</i></b> </h4>
+                </li>
+                <li>
+                    <h2>Paragraph</h2>
+                    <h4>Paragraph (inglizcha - "xat boshi") - veb sahifada matn chiqarish uchun mo'ljallangan maxsus teg.</h4>
+                    <h2>Bundan tashqari yana ikkita qo'shimcha teglar mavjud:
+                        <ol>
+                            <li>br <br>
+                                <h5>Bu teg matnlar ishlaganda <i>enter</i>dan foydalansih uchun kerak bo'ladi.</h5>
+                            </li>
+                            <li>hr <br>
+                                 <h5> Matnlar orasini chiziq bilan ajratish uchun <i>hr</i> <b>(horizontal row)</b> tegidan foydalanamiz</h5>
+                            </li>
+                        </ol>
+                    </h2>
+                </li>
+            </ol>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+        <div class="layout5" id="layout5">
+            <h2>Formatting elementlari</h2>
+            <h3>Formatting elementlari matnlarni turli ko'rinishlarga olib keladi. Formatting elementlari quyidagilar:</h3>
+            <ul>
+                <li>b (Bold) - matnni qalinroq ko'rinishga olib keladi.</li>
+                <li>i (Italic) - matnni qiyaroq ko'rinishga olib keladi.</li>
+                <li>del (Delete) - matnni ustiga chiziq chizadi.</li>
+                <li>sub (Subscript) - Contentni pastki tomoniga matn yozish imkonini beradi.</li>
+                <li>sup (Superscript) - Contentni yuqori tomoniga matn yozish imkonini beradi.</li>
+                <li>mark (Marker) - Matnni orqasini sariq rangga bo'yab beradi.</li>
+            </ul>
+            <h4>mark element eskirgan element hisoblanadi!</h4>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+        <div class="layout6" id="layout6">
+            <h2>Style</h2>
+          
+            <h3>Stil berishning 3 ta turi bor:</h3>
+            <ol>
+                <li>Inline style</li>
+                <h5>
+                    <p>
+                        Inline style - elementga style attributi yordamida stil berishdir.
+                    </p>
+                </h5>
+                <h4 style="color: red;">Inline style berish tavsiya etilmaydi.</h4>
+                <li>Internal style</li>
+                <h5>
+                    <p>Style elementi body elementlariga ,shuningdek, body elementining o'ziga ham stil , ya'ni bezak berish uchun
+                    ishlatiladi. <br> Style elementi bizga HTML hujjatimizda CSS xossalarini ishlatishga yordam beradi.
+              
+                </p></h5>
+                <li>External style</li>
+                <h5>
+                    <p>External style - HTML hujjatimizdan tashqarida amalga oshiriladi, ya'ni alohida 
+                        CSS fayl ochib, stil beriladi.
+                    </p>
+                </h5>
+            </ol>
+            <a href="#head"><button>Bosh sahifa</button></a>
+        </div>
+    </section>
+</body>
+</html>
